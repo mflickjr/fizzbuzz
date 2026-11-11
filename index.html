@@ -1,0 +1,36 @@
+Specifications
+
+The app should evaluate numbers 1 through 20.
+If the number is divisible by 3 and 5, print the number followed ‘FizzBuzz’.
+If the number is divisible by 3 only, print the number followed by ‘Fizz’.
+If the number is divisible by 5 only, print the number followed by ‘Buzz’.
+If the number is divisible by neither, print just the number.
+
+<html>
+  <head>
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <h1>FizzBuzz</h1>
+    <p>The app should evaluate numbers 1 through 20.</p>
+    <p>If the number is divisible by 3 and 5, print the number followed ‘FizzBuzz’.</p>
+    <p>If the number is divisible by 3 only, print the number followed by ‘Fizz’.</p>
+    <p>If the number is divisible by 5 only, print the number followed by ‘Buzz’.</p>
+    <p>If the number is divisible by neither, print just the number.</p>
+  </body>
+  <script>
+    "use strict";
+
+    for (let i = 1; i <= 20; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        console.log(i + ' FizzBuzz');
+      } else if (i % 3 === 0) {
+        console.log(i + ' Fizz');
+      } else if (i % 5 === 0) {
+        console.log(i + ' Buzz');
+      } else {
+        console.log(i);
+      }
+    }
+  </script>
+</html>
